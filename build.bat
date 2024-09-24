@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-ECHO Starting vsix code signing...
+ECHO Building VSCode...
 
 ksigntool sign GOOGLE_EXTERNAL /v /debug /t http://timestamp.digicert.com %KOKORO_ARTIFACTS_DIR%\github\test-koko\fdc-latest.vsix
 

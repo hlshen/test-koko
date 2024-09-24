@@ -4,6 +4,7 @@ set PATH=C:\Program Files\Java\jdk1.7.0_75\bin;%PATH%
 :: The final directory name in this path is determined by the scm name specified
 :: in the job configuration.
 cd %KOKORO_ARTIFACTS_DIR%\github\test-koko
+echo Hey we got artifacts...
+@REM call build.bat
 
-call build.bat
 exit %ERRORLEVEL%
